@@ -37,9 +37,9 @@ static final String RUTA ="D:\\NumerosReales.txt";
         double suma = 0;
         int contador = 0;
 
-        for (int i = 0; i < numeros.length; i++) {
-            if (!numeros[i].isEmpty()) {
-                double num = Double.valueOf(String.valueOf(numeros[i]));
+        for (String n : numeros) {
+            if (!n.isEmpty()) {
+                double num = Double.valueOf(String.valueOf(n));
                 suma += num;
                 contador++;
             }
