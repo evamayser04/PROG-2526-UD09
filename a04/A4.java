@@ -5,17 +5,32 @@ import java.io.*;
 public class A4 {
 static final String RUTA ="D:\\NumerosReales.txt";
     public static void main(String[] args) {
-        String texto = "";
+
         BufferedReader br = null;
+        double suma = 0;
+        int contador = 0;
 
         try {
-            
             br = new BufferedReader(new FileReader(RUTA));
             String linea = br.readLine();
+
             while(linea != null){
-                texto = texto + linea;
+
+                // Separar números de la línea
+                String[] numerosEnLinea = linea.split(" ");
+
+                // Recorrer cada número
+                for (String numStr : numerosEnLinea) {
+                    if (!numStr.isEmpty()) { // evitar errores por espacios
+                        Double numero = Double.valueOf(numStr);
+                        suma += numero;
+                        contador++;
+                    }
+                }
+
                 linea = br.readLine();
             }
+
         } 
         catch (IOException ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -24,24 +39,10 @@ static final String RUTA ="D:\\NumerosReales.txt";
             if(br != null) {
                 try {
                     br.close();
-                    System.out.println("He terminado -> Cierro el fichero.");
                 } 
                 catch (IOException ex) {
                     System.out.println(ex);
                 }
-            }
-        }
-                System.out.println(texto);
-
-        String[] numeros = texto.split(" ");
-        double suma = 0;
-        int contador = 0;
-
-        for (String n : numeros) {
-            if (!n.isEmpty()) {
-                double num = Double.valueOf(String.valueOf(n));
-                suma += num;
-                contador++;
             }
         }
 
