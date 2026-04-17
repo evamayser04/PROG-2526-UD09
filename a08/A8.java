@@ -17,9 +17,9 @@ public class A8 {
             BufferedWriter out = new BufferedWriter(new FileWriter("FICHEROS\\" + copia))
         ) {
 
-            String linea = in.readLine();
+            String linea;
 
-            while (linea != null) {
+            while ((linea = in.readLine()) != null) {
                 out.write(linea);
                 out.newLine();
             }
