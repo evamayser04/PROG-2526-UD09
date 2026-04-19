@@ -135,3 +135,6 @@ Esto garantiza que los recursos se liberen correctamente.
 Eva Katherine Mayser Vanea DAM / SMR 💻
 Curso 2025/2026
 
+<p align="center">
+  <img src="[https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWlhaWVzZWF6d3FoeGJxZG5oMTR0YW9ncmplem1rbjgwYmg1NmNrayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oKIPnAiaMCws8nOsE/giphy.gif](https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3a3dqMW5sdzB3MGkxNDVkcHo1a3kzMzN3NzhxNWlqZXJpbHJncmgxbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6arSJwtKZBtWCRzg6d/giphy.gif)" width="500" height="300"/>
+</p>
